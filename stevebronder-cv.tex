@@ -1,0 +1,179 @@
+\documentclass[9pt, parskip=full]{orbit-cv}
+\urlstyle{rm}
+
+\begin{document} 
+
+%%%%%%%
+%% Lists
+%%%%%%%
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=3pt,topsep=1pt,partopsep=1pt]}
+        {\end{itemize}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+
+
+%%%%%%%%%%%%%%%
+% Color schemes
+%%%%%%%%%%%%%%%%
+
+% Uncomment one of these if you'd rather
+% not use the default color scheme
+
+%\colorschemeTwo
+%\colorschemeThree
+%\colorschemeFour
+%\colorschemeFive
+%\colorschemeSix
+
+%%%%%%%%%
+% Profile
+%%%%%%%%%
+
+%\leftSidebar{}
+\cvname{Steve Bronder} %your name
+\cvjobtitle{Data Science}%your actual job position
+\profilepic{/home/steve/github/resume/jobb_pic2.jpg} %path of profile pic
+
+\addContact{\faBed}{New York City, NY}
+\addContact{\faEnvelope{}}{\href{mailto:sab2287@columbia.edu}{sab2287@columbia.edu}}
+\addContact{\faPhone{}}{+4127191282}
+\addContact{\faGlobe{}}{\href{http://stevebronder.com}{stevebronder.com}}
+\addContact{\faLinkedin{}}{\href{https://www.linkedin.com/in/stevebronder/}{linkedin.com/stevebronder}}
+\addContact{\faGithub{}}{\href{https://github.com/stevebronder}{github.com/stevebronder}}
+
+%% Education
+\addEducationExtended{Columbia University}{M.A. in Quantiative Methods}{GPA: 3.6}{2015—2016}
+\addEducationExtended{Duquesne University}{BSBA in Economics}{GPA: 3.2}{2010—2014}
+%% Languages
+%\addLanguage{Spanish}{native}
+%\addLanguage{English}{professional}
+%\addLanguage{French}{professional}
+%% Hobbies
+
+\addInterest{\faCode{}  \hfill Open Source}
+\addInterest{\faBicycle{} \hfill Bicycling}
+\addInterest{\faCutlery{} \hfill Cooking}
+\addInterest{\faGroup{} \hfill Dungeons and Dragons}
+%% (mad!)Skillzz
+\addSkill{R}{0.98}
+\addSkill{git}{0.98}
+\addSkill{Time Series}{.95}
+\addSkill{Machine Learning}{.93}
+\addSkill{Python}{0.92}
+\addSkill{Automation}{.75}
+\addSkill{UNIX}{0.71}
+\addSkill{SQL}{0.70}
+\addSkill{C++}{0.68}
+\addSkill{CUDA / OpenCL}{0.5}
+
+\makeprofile
+
+\begin{comment}
+\section{\faUser{} CAREER PROFILE}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent libero orci, auctor sed, faucibus vestibulum, gravida vitae, arcu. Nunc posuere. Suspendisse potenti. Praesent in arcu ac nisl ultricies ultricies. Fusce eros. Sed pulvinar vehicula ante. Maecenas urna dolor, egestas vel, tristique et, porta eu, leo. Curabitur vitae sem eget arcu laoreet vulputate. Cras orci neque, faucibus et, rhoncus ac, venenatis ac, magna. Aenean eu lacus. Aliquam luctus facilisis augue. Nullam fringilla consectetuer sapien. Aenean neque augue, bibendum a, feugiat id, lobortis vel, nunc. Suspendisse in nibh quis erat condimentum pretium. Vestibulum tempor odio et leo. Sed sodales vestibulum justo. Cras convallis pellentesque augue. In eu magna. In pede turpis, feugiat pulvinar, sodales eget, bibendum consectetuer, magna. Pellentesque vitae augue.
+\end{comment}
+
+\section{\faBriefcase{} RECENT WORK EXPERIENCE}
+
+\workexp{Senior/Principle Data Analyst}{April 2017 — present}{Capital One Commercial Bank, Financial Institutions Group}{
+
+
+- Developed risk models in R and Python to assess the loss distribution for leverage lending contracts. I developed the models for both our portfolio resiliency reporting and for underwriters to use when assessing the risk of a potential deal structure.
+\par \vspace{1mm}
+- Built machine learning models to predict Moody's risk ratings on unrated leverage lending collateral with a 93\% accuracy, which was 3x more accurate than previous method. 
+\par \vspace{1mm}
+- Wrote a data validation toolkit in Python to automate receiving, validating, and uploading manually captured data to a database. The package's modular structure allows users to apply a simple methodology to build out data pipelines. Users can switch out new connections and data input formats easily. This project is used in the FIG group to manage the monthly collateral information given to us by our clients across several books.
+\par \vspace{1mm}
+- Automated several reports that normally took 5 days into a daily automated service.
+
+}
+
+\workexp{Data Science Intern}{May 2016 - August 2016}{Zurich Financial Services Group}{
+
+- Created a machine learning model for corporate auto insurance contracts that is 12\% more predictive than the standard industry model.
+\par \vspace{1mm}
+- Used Hive and SQL for data summarization, querying, and analysis \par
+\par \vspace{1mm}
+%\item[$\triangleright$]  Gave presentations on quantitative analysis standards, pitfalls, and practices to technical and non-technical team members
+- Created web applications for managers to track timelines and costs of analytics projects
+}
+
+
+\workexp{Marketing Analyst I}{May 2014 - August 2014 \& May 2015 - July 2015}{Management Science Associates}{
+%\item[$\triangleright$] Constructed Excel tools to compare structural equation models
+%- Developed \href{https://drive.google.com/file/d/0B2z2q2TPupgfT0ZZSW1fMlp0YUk/edit?usp=sharing}{{Bayesian Hierarchical models}} for client requested study on price elasticity
+%\par \vspace{1mm}
+
+%\item[$\triangleright$]	Authored \href{http://www.stevebronder.com/news/2014/8/3/8el0szzsaxhfiljvkf8f4uty2yiinh}{{R tutorial}} for data visualization and web scraping GPS coordinates 
+- Created an automated process to generate
+ \href{http://rawgit.com/stevebronder/1793e9494135728db4ac/raw/bca0484a9cf1b223344d51d005ab4288b0e7f5e2/ShareDiffReport7_14_15.html}{{Interactive Dashboards(link)}} with R and Javascript
+\par \vspace{1mm}
+%- Gave \href{https://rawgit.com/stevebronder/InteractiveGraphTutorial/master/index.html#/slide-1}{{tutorials}} on visualization, web scraping, and data mining in R, D3.js, and Shiny
+}
+
+\vspace{-.2in}
+
+\section{\faCodeFork{} Open Source Memberships}
+Stan: Core Team member, MLR: developer, quantmod: contributor
+
+\vspace{-.2in}
+
+
+\section{\faCubes{} SELECTED PROJECTS}
+
+\project{https://github.com/SteveBronder/stancon2018}{\texttt{stanMathCL}: GPU Routines for the Stan Programming Language}{
+To be presented at Stancon 2018 \par
+ This work is the first known open source implementation of the Cholesky decomposition using a GPU in a Hamiltonian Monte Carlo setting. Results show that large matrices can see speedups of 8x while retaining the same precision as CPU methods.
+}
+
+\project{https://rawgit.com/Stevo15025/mlrForcastingTutorial/gh-pages/forcasting_in_mlr.html}{\texttt{mlrfc}: An R package for forecasting with machine learning models}{
+Presented at R in Finance 2017: \href{https://channel9.msdn.com/Events/RFinance/RFinance-2017/Lightning-Talks-I-Day-2}{(click here for video, I am the first speaker})\par
+ R package combining methodologies of machine learning with classical forecasting techniques. Combining these models with machine learning methods for tuning hyperparameters makes for more robust models. This package can also use machine learning methods for forecasting.
+
+}
+
+\project{https://github.com/stevebronder/tsp_gpu}{\texttt{Columbus}: GPU Routines for solving the traveling salesman problem}{
+Presented at Columbia Electrical Engineering Student Conference (2016) \par
+Columbus uses CUDA to implement a multi-core simulated annealing routine for solving large ($N>100K$) Euclidian TSPs. This software can come within 3\% of the optimal path with a 30x speed increase.
+}
+
+\project{https://github.com/SteveBronder/PANICr}{\texttt{PANICr}: Tests for Nonstationarity Within Large Panels of Time Series}{
+ Panel Analysis of Nonstationarity in Idiosyncratic and Common Components (PANIC) is a methodology for testing large panels of time series for pervasive or variable specific nonstationarity.
+}
+
+\vspace{-.2in}
+\section{\faTerminal{} SKILLS}
+ git, R (5+ years), Python (5+ years), C++, unix, SQL, Fortran, C, OpenCL, CUDA, VBA, Excel
+%\input{bars}
+%\ListSkills{}
+
+\begin{comment}
+\section{\faBook{} SELECTED PUBLICATIONS}
+
+\publication{Fair Gardening}{R. Statue et al.}{IEEE Gardening Letters, vol. 21, no. 1, pp. 184-187. Jan. 2017}
+
+\publication{Gardening Beyond the Green: An In-Depth Look at Better Metrics for
+  Garden Monitoring}{R. Statue et al.}{Gardening Quality and Experience 1(1):1-23. Jan. 2016}
+
+\publication{From Gardening Growth Agreements to Gardening Experience
+  Agreements: the Challenges of Selling Quality Produce}{R. Statue et al.}{In proceedings of IEEE GCC Gardening, London, UK. Jun. 2015}
+
+\publication{Meta-Gardening Quality}{R. Statue et al.}{PGK - Praxis der Gartenarbeit und -kommunikation, 37(4):265-274. Oct. 2014}
+
+\publication{A Multi-Dimensional View of Gardening: the GGGG Model}{R. Statue et
+al.}{In proceedings of Gardening Symposium 2012, Opatija, Croatia. May 2012}
+
+\publication{Challenges of Garden Management in Cloudy Weather}{R. Statue et al.}{IEEE Gardening Magazine, 50(4):28-36. Apr. 2012}
+\end{comment}
+\end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
